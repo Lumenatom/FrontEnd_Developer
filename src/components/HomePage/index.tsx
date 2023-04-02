@@ -1,10 +1,12 @@
-import AboutMe from "../AboutMe";
+import AboutMe from "./AboutMe";
 import { FC } from "react";
+import Technologies from "./Technologies";
 
 const HomePage: FC = () => {
   return (
     <>
       <AboutMe />
+      <Technologies />
     </>
   );
 };

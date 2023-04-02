@@ -1,0 +1,23 @@
+.technologiesWrapper {
+  padding-top: 100px;
+}
+.technologiesWrapper .imageCarAndRoad {
+  width: 100vw;
+  height: 150px;
+  position: relative;
+}
+.technologiesWrapper .imageCarAndRoad .carTechnologies {
+  position: absolute;
+  top: 0;
+  z-index: 99;
+}
+.technologiesWrapper .imageCarAndRoad .carTechnologies img {
+  width: 600px;
+}
+.technologiesWrapper .imageCarAndRoad .road {
+  width: 100vw;
+  position: absolute;
+  top: 85%;
+}
+
+/*# sourceMappingURL=index.module.css.map */

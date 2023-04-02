@@ -1,0 +1,31 @@
+@import "../../../utils/variable.scss";
+
+.technologiesWrapper {
+  padding-top: 100px;
+
+  .imageCarAndRoad {
+    width: 100vw;
+    height: 150px;
+    position: relative;
+
+
+    .carTechnologies {
+      position: absolute;
+      top: 0;
+      z-index: 99;
+
+      img {
+        width: 600px;
+
+      }
+    }
+
+    .road {
+      width: 100vw;
+      position: absolute;
+      top: 85%;
+    }
+  }
+
+
+}

@@ -1,0 +1,29 @@
+.aboutMeWrapper {
+  padding: 150px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+}
+.aboutMeWrapper .description {
+  display: flex;
+  flex-direction: column;
+}
+.aboutMeWrapper .description h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 35px;
+  color: #ffffff;
+}
+.aboutMeWrapper .description h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 100px;
+}
+.aboutMeWrapper .description h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=index.module.css.map */
