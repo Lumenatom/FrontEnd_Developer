@@ -5,9 +5,9 @@ import HomePage from "./components/HomePage";
 import Header from "./components/Header";
 
 const App: FC = () => {
-  // useEffect(() => {
-  //   alert("Artur Shevtsov is currently working on this project :)");
-  // }, []);
+  useEffect(() => {
+    alert("Artur Shevtsov is currently working on this project :)");
+  }, []);
 
   return (
     <div className={styles.App}>
