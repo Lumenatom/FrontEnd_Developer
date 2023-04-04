@@ -11,6 +11,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  overflow: hidden;
+
 
 
   .description {
@@ -39,6 +41,7 @@
   }
 
   .transitionImage {
+    max-width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
