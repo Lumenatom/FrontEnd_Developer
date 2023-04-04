@@ -13,10 +13,15 @@
   img {
     width: 45px;
     margin: 20px;
+    transition: $transition;
+    cursor: pointer;
+
 
 
     &:hover {
-      scale: 1.2;
+      scale: 1.1;
+      transition: $transition;
+
     }
   }
 
@@ -64,10 +69,12 @@
           transition: $transition;
 
           &:hover {
-            transform: scale(1.2);
-            border-bottom: 1px solid $colorYellow;
+            transform: scale(1.1);
             transition: $transition;
           }
+
+
+
 
           a {
             font-family: $fontPoppins;
@@ -81,13 +88,24 @@
             margin-right: 10px;
             border-bottom: 1px solid transparent;
             transition: $transition;
+
+            &:hover {
+              border-bottom: 1px solid $colorYellow;
+              transition: $transition;
+            }
+
+            &.active {
+              color: red;
+            }
           }
+
 
 
         }
       }
     }
   }
+
 
 
 }

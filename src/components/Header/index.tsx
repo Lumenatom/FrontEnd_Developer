@@ -2,13 +2,16 @@ import { FC } from "react";
 import styles from "./index.module.scss";
 import Logo from "../../assets/logo.svg";
 import { AnimatePresence, motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import useVisibleMenu from "../../hooks/useVisibleMenu";
 import { SlMenu } from "react-icons/sl";
 import { IoClose } from "react-icons/io5";
 
 const Header: FC = () => {
   const { visibleMenu, handlerVisibleMenu } = useVisibleMenu();
+  let { pathname } = useLocation();
+
+  console.log(pathname);
 
   return (
     <div className={styles.headerWrapper}>
@@ -45,17 +48,22 @@ const Header: FC = () => {
               >
                 <ul onClick={() => handlerVisibleMenu(false)}>
                   <li>
-                    <Link to={"/"} className={styles.link}>
-                      Home
-                    </Link>
+                    <NavLink to={"/"}>Home</NavLink>
                   </li>
+
                   <li>
-                    <Link to={"/aboutMe"}>About me</Link>
-                  </li>
-                  <li>
-                    <Link to={"/skills&technologies"}>
+                    <NavLink to={"/skills&technologies"}>
                       Skills & Technologies
-                    </Link>
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to={"/projects"}>Projects</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to={"/aboutMe"}>About me</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to={"/contacts"}>Contacts</NavLink>
                   </li>
                 </ul>
               </motion.nav>

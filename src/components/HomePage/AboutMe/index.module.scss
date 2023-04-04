@@ -1,10 +1,11 @@
 @import "../../../utils/variable.scss";
 
 .aboutMeWrapper {
-  padding: 50px;
+  padding: 70px;
   color: $colorWhite;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  text-align: center;
   height: 100vh;
   width: 100vw;
   background-image: url("../../../assets/Home/bg1.svg");
@@ -18,24 +19,30 @@
   .description {
     display: flex;
     flex-direction: column;
+    // justify-content: space-between;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
 
     h6 {
       font-family: $fontRaleway;
       font-weight: $fontWait300;
       font-size: 35px;
       color: $colorWhite ;
+      text-align: left;
+      margin-bottom: 10px;
     }
 
     h2 {
       font-family: $fontPoppins;
       font-weight: $fontWait600;
       font-size: 100px;
+      margin-bottom: 15px;
     }
 
     h3 {
       font-family: $fontRaleway;
       font-weight: $fontWait300;
-      font-size: 50px;
+      font-size: 37px;
       color: $colorWhite ;
     }
   }
