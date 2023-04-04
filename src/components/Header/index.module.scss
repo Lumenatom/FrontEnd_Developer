@@ -55,7 +55,7 @@
         display: flex;
         flex-direction: column;
         gap: 35px;
-        padding: 30px 35px;
+        padding: 30px 0px 30px 35px;
 
         li {
           padding-bottom: 2px;
@@ -71,7 +71,7 @@
 
           a {
             font-family: $fontPoppins;
-            font-size: $fontSize24;
+            font-size: $fontSize20;
             font-weight: $fontWait400;
             text-decoration: none;
             white-space: nowrap;

@@ -1,6 +1,8 @@
 import { FC } from "react";
 import styles from "./index.module.scss";
 import useVisibleMenu from "../../../hooks/useVisibleMenu";
+import TransitionImage from "../../../assets/Home/transition.svg";
+
 const AboutMe: FC = () => {
   const { handlerVisibleMenu } = useVisibleMenu();
 
@@ -17,14 +19,7 @@ const AboutMe: FC = () => {
         </h2>
         <h3>FRONT-END DEVELOPER</h3>
       </div>
-      {/* <div className={styles.image}>
-        <h6>HELLO</h6>
-        <h2>
-          Iʼm ARTHUR
-          <br /> SHEVTSOV
-        </h2>
-        <h3>FrontEnd Developer</h3>
-      </div> */}
+      <img className={styles.transitionImage} src={TransitionImage} alt="" />
     </div>
   );
 };

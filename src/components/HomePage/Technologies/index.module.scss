@@ -1,31 +1,11 @@
 @import "../../../utils/variable.scss";
 
 .technologiesWrapper {
-  padding-top: 100px;
-
-  .imageCarAndRoad {
-    width: 100vw;
-    height: 150px;
-    position: relative;
+  height: 100vh;
+  background-color: rgba($color: #000000, $alpha: 0.1);
+  backdrop-filter: blur(50px);
 
 
-    .carTechnologies {
-      position: absolute;
-      top: 0;
-      z-index: 99;
-
-      img {
-        width: 600px;
-
-      }
-    }
-
-    .road {
-      width: 100vw;
-      position: absolute;
-      top: 85%;
-    }
-  }
 
 
 }

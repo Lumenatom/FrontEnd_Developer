@@ -37,7 +37,7 @@ const Header: FC = () => {
               <motion.nav
                 initial={{ width: 0, opacity: 1 }}
                 animate={{
-                  width: "350px",
+                  width: "280px",
                   height: "100vh",
                   opacity: 1,
                 }}
