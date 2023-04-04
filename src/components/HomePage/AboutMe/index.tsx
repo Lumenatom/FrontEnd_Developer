@@ -17,14 +17,14 @@ const AboutMe: FC = () => {
         </h2>
         <h3>FRONT-END DEVELOPER</h3>
       </div>
-      <div className={styles.image}>
+      {/* <div className={styles.image}>
         <h6>HELLO</h6>
         <h2>
           Iʼm ARTHUR
           <br /> SHEVTSOV
         </h2>
         <h3>FrontEnd Developer</h3>
-      </div>
+      </div> */}
     </div>
   );
 };
