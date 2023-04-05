@@ -18,7 +18,7 @@ const App: FC = () => {
         <div className={styles.container}>
           <Routes>
             <Route path={"/"} element={<HomePage />} />
-            <Route path={"/skills&technologies"} element={<PagesNull />} />
+            <Route path={"/technologyStack"} element={<PagesNull />} />
             <Route path={"/projects"} element={<PagesNull />} />
             <Route path={"/aboutMe"} element={<PagesNull />} />
             <Route path={"/contacts"} element={<PagesNull />} />

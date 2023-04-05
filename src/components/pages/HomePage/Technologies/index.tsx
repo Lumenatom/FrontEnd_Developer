@@ -2,46 +2,75 @@ import { FC } from "react";
 import styles from "./index.module.scss";
 import {
   favoriteTechnologies,
-  otherTechnologies,
   stylesTechnologies,
   supportTechnologies,
 } from "./dataTechnologies";
+import { motion } from "framer-motion";
 
 const Technologies: FC = () => {
+  const listVariants = {
+    hidden: {
+      y: "100%",
+      opacity: 0,
+    },
+    visible: (i: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i * 0.1,
+        type: "spring",
+        stiffness: 70,
+      },
+    }),
+  };
+
   return (
     <div className={styles.technologiesWrapper}>
+      <h2 className={styles.title}>Technology stack</h2>
       <div className={styles.favoriteTechnologies}>
-        {favoriteTechnologies.map((el) => (
-          <div>
+        {favoriteTechnologies.map((el, i) => (
+          <motion.div
+            className={styles.item}
+            whileInView="visible"
+            variants={listVariants}
+            initial="hidden"
+            // animate="visible"
+            custom={i}
+          >
             <img src={el.img} alt={el.name} />
             <h2>{el.name}</h2>
-          </div>
+          </motion.div>
         ))}
       </div>
       <div className={styles.stylesTechnologies}>
-        {stylesTechnologies.map((el) => (
-          <div>
+        {stylesTechnologies.map((el, i) => (
+          <motion.div
+            className={styles.item}
+            variants={listVariants}
+            whileInView="visible"
+            initial="hidden"
+            // animate="visible"
+            custom={4 + i}
+          >
             <img src={el.img} alt={el.name} />
             <h2>{el.name}</h2>
-          </div>
+          </motion.div>
         ))}
       </div>
-      <div className={styles.supportTechnologies}>
-        {supportTechnologies.map((el) => (
-          <div>
+      <motion.div className={styles.supportTechnologies}>
+        {supportTechnologies.map((el, i) => (
+          <motion.div
+            className={styles.item}
+            variants={listVariants}
+            whileInView="visible"
+            initial="hidden"
+            custom={8 + i}
+          >
             <img src={el.img} alt={el.name} />
             <h2>{el.name}</h2>
-          </div>
+          </motion.div>
         ))}
-      </div>
-      <div className={styles.otherTechnologies}>
-        {otherTechnologies.map((el) => (
-          <div>
-            <img src={el.img} alt={el.name} />
-            <h2>{el.name}</h2>
-          </div>
-        ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

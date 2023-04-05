@@ -1,0 +1,18 @@
+@import "../../../../utils/variable.scss";
+
+
+.projectsWrapper{
+  width: 100vw;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+
+  .title {
+    color: $colorWhite;
+    font-family: $fontPoppins;
+    font-size: 32px;
+    font-weight: $fontWait100;
+  }
+}

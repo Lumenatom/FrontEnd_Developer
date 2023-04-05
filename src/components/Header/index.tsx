@@ -51,9 +51,7 @@ const Header: FC = () => {
                   </li>
 
                   <li>
-                    <NavLink to={"/skills&technologies"}>
-                      Skills & Technologies
-                    </NavLink>
+                    <NavLink to={"/technologyStack"}>Technology stack</NavLink>
                   </li>
                   <li>
                     <NavLink to={"/projects"}>Projects</NavLink>

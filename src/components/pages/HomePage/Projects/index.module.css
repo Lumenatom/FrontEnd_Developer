@@ -1,0 +1,16 @@
+.projectsWrapper {
+  width: 100vw;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+.projectsWrapper .title {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 100;
+}
+
+/*# sourceMappingURL=index.module.css.map */
