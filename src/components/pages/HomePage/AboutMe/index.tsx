@@ -1,6 +1,6 @@
 import { FC } from "react";
 import styles from "./index.module.scss";
-import useVisibleMenu from "../../../hooks/useVisibleMenu";
+import useVisibleMenu from "../../../../hooks/useVisibleMenu";
 import { motion } from "framer-motion";
 
 const AboutMe: FC = () => {
@@ -12,7 +12,7 @@ const AboutMe: FC = () => {
       transition: {
         delay: i * 0.5,
         type: "spring",
-        stiffness: 100,
+        stiffness: 40,
       },
     }),
     hidden: {
@@ -52,6 +52,20 @@ const AboutMe: FC = () => {
           FRONT-END DEVELOPER
         </motion.h3>
       </div>
+      <motion.div
+        variants={listVariants}
+        initial="hidden"
+        animate="visible"
+        custom={4}
+        className={styles.buttons}
+      >
+        <button className={styles.buttonCv}>
+          <span>View CV</span>
+        </button>
+        <button className={styles.buttonContact}>
+          <span>Contact me</span>
+        </button>
+      </motion.div>
     </div>
   );
 };

@@ -2,16 +2,15 @@ import { FC } from "react";
 import styles from "./index.module.scss";
 import Logo from "../../assets/logo.svg";
 import { AnimatePresence, motion } from "framer-motion";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import useVisibleMenu from "../../hooks/useVisibleMenu";
 import { SlMenu } from "react-icons/sl";
 import { IoClose } from "react-icons/io5";
 
 const Header: FC = () => {
   const { visibleMenu, handlerVisibleMenu } = useVisibleMenu();
-  let { pathname } = useLocation();
 
-  console.log(pathname);
+  console.log(visibleMenu);
 
   return (
     <div className={styles.headerWrapper}>
