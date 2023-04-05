@@ -60,7 +60,9 @@ const AboutMe: FC = () => {
         className={styles.buttons}
       >
         <button className={styles.buttonCv}>
-          <span>View CV</span>
+          <a download="FrontEnd Shevtsov.pdf" href="resume.pdf">
+            View CV
+          </a>
         </button>
         <button className={styles.buttonContact}>
           <span>Contact me</span>

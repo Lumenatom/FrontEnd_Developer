@@ -54,6 +54,14 @@
     display: flex;
     gap: 40px;
 
+    a {
+      text-decoration: none;
+      font-family: $fontPoppins;
+      font-weight: $fontWait600;
+      font-size: 16px;
+      color: $colorWhite ;
+    }
+
     .buttonCv {
       border: none;
       display: block;
@@ -72,7 +80,7 @@
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
 
 
-      & span {
+      & a {
         position: relative;
         z-index: 1;
       }
@@ -115,7 +123,7 @@
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
 
 
-      & span {
+      & a {
         position: relative;
         z-index: 1;
       }
