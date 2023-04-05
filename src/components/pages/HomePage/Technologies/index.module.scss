@@ -1,11 +1,58 @@
 @import "../../../../utils/variable.scss";
 
 .technologiesWrapper {
-  height: 100vh;
-  background-color: rgba($color: #000000, $alpha: 0.1);
-  backdrop-filter: blur(50px);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
 
+  img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    transition: $transition;
 
+    &:hover {
+      scale: 1.1;
+      transition: $transition;
+    }
+  }
 
+  h2{
+    color: $colorWhite ;
+    font-family: $fontPoppins;
+    font-size: $fontSize16;
+    font-weight: $fontWait300;
+    text-align: center;
+    margin-top: 5px;
+    line-height: 120%;
+    width: 140px;
 
+  }
+
+}
+
+.favoriteTechnologies {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.stylesTechnologies{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.supportTechnologies{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.otherTechnologies{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
 }

@@ -1,23 +1,53 @@
 .technologiesWrapper {
-  padding-top: 100px;
-}
-.technologiesWrapper .imageCarAndRoad {
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+.technologiesWrapper img {
+  width: 150px;
   height: 150px;
-  position: relative;
+  border-radius: 20px;
+  transition: all 0.3s ease-out;
 }
-.technologiesWrapper .imageCarAndRoad .carTechnologies {
-  position: absolute;
-  top: 0;
-  z-index: 99;
+.technologiesWrapper img:hover {
+  scale: 1.1;
+  transition: all 0.3s ease-out;
 }
-.technologiesWrapper .imageCarAndRoad .carTechnologies img {
-  width: 600px;
+.technologiesWrapper h2 {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 5px;
+  line-height: 120%;
+  width: 140px;
 }
-.technologiesWrapper .imageCarAndRoad .road {
-  width: 100vw;
-  position: absolute;
-  top: 85%;
+
+.favoriteTechnologies {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.stylesTechnologies {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.supportTechnologies {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.otherTechnologies {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
 }
 
 /*# sourceMappingURL=index.module.css.map */
