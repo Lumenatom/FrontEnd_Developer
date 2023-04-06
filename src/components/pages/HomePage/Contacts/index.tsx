@@ -6,7 +6,7 @@ const Contacts: FC = () => {
   return (
     <div className={styles.contactsWrapper} id="contacts">
       <h2 className={styles.title}>Contacts</h2>
-      <PagesNull />
+      {/*<PagesNull />*/}
     </div>
   );
 };

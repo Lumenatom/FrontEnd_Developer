@@ -9,14 +9,14 @@ import Header from "./Header";
 
 const HomePage: FC = () => {
   return (
-    <div className={styles.homePageWrapper}>
+    <>
       <NavBar />
       <Header />
       <Technologies />
       <Projects />
       <Experience />
       <Contacts />
-    </div>
+    </>
   );
 };
 
