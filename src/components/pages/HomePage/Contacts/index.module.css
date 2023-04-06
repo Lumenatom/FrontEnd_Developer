@@ -1,4 +1,4 @@
-.aboutMeWrapper {
+.contactsWrapper {
   width: 100vw;
   height: 150vh;
   display: flex;
@@ -6,7 +6,7 @@
   align-items: center;
   padding-top: 100px;
 }
-.aboutMeWrapper .title {
+.contactsWrapper .title {
   color: #ffffff;
   font-family: "Poppins", sans-serif;
   font-size: 32px;

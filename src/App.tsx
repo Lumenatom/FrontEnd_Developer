@@ -2,7 +2,7 @@ import React, { FC, useEffect } from "react";
 import styles from "./App.module.scss";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./components/pages/HomePage";
-import Header from "./components/Header";
+import Header from "./components/NavBar";
 import Loader from "./components/Loader";
 import PagesNull from "./components/pages/PagesNull/PagesNull";
 import useVisibleMenu from "./hooks/useVisibleMenu";
@@ -18,10 +18,10 @@ const App: FC = () => {
         <div className={styles.container}>
           <Routes>
             <Route path={"/"} element={<HomePage />} />
-            <Route path={"/technologyStack"} element={<PagesNull />} />
-            <Route path={"/projects"} element={<PagesNull />} />
-            <Route path={"/aboutMe"} element={<PagesNull />} />
-            <Route path={"/contacts"} element={<PagesNull />} />
+            {/*<Route path={"/technologyStack"} element={<PagesNull />} />*/}
+            {/*<Route path={"/projects"} element={<PagesNull />} />*/}
+            {/*<Route path={"/aboutMe"} element={<PagesNull />} />*/}
+            {/*<Route path={"/contacts"} element={<PagesNull />} />*/}
           </Routes>
         </div>
       </BrowserRouter>

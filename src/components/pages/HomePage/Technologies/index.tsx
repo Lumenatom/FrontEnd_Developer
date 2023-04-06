@@ -25,7 +25,7 @@ const Technologies: FC = () => {
   };
 
   return (
-    <div className={styles.technologiesWrapper}>
+    <div className={styles.technologiesWrapper} id="technologyStack">
       <h2 className={styles.title}>Technology stack</h2>
       <div className={styles.favoriteTechnologies}>
         {favoriteTechnologies.map((el, i) => (
@@ -34,7 +34,7 @@ const Technologies: FC = () => {
             whileInView="visible"
             variants={listVariants}
             initial="hidden"
-            // animate="visible"
+            viewport={{ once: true }}
             custom={i}
           >
             <img src={el.img} alt={el.name} />
@@ -48,8 +48,8 @@ const Technologies: FC = () => {
             className={styles.item}
             variants={listVariants}
             whileInView="visible"
+            viewport={{ once: true }}
             initial="hidden"
-            // animate="visible"
             custom={4 + i}
           >
             <img src={el.img} alt={el.name} />
@@ -64,6 +64,7 @@ const Technologies: FC = () => {
             variants={listVariants}
             whileInView="visible"
             initial="hidden"
+            viewport={{ once: true }}
             custom={8 + i}
           >
             <img src={el.img} alt={el.name} />

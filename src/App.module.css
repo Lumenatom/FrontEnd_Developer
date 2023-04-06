@@ -107,15 +107,10 @@ input {
 }
 
 .App {
-  height: 1000px;
-  background-image: url("assets/Home/bg.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  overflow: hidden;
 }
 .App .container {
   max-width: 1440px;
-  margin: 0 auto;
 }
 
 /*# sourceMappingURL=App.module.css.map */

@@ -2,18 +2,16 @@ import { FC } from "react";
 import styles from "./index.module.scss";
 import Logo from "../../assets/logo.svg";
 import { AnimatePresence, motion } from "framer-motion";
-import { NavLink } from "react-router-dom";
 import useVisibleMenu from "../../hooks/useVisibleMenu";
 import { SlMenu } from "react-icons/sl";
 import { IoClose } from "react-icons/io5";
+import { Link } from "react-scroll";
 
-const Header: FC = () => {
+const NavBar: FC = () => {
   const { visibleMenu, handlerVisibleMenu } = useVisibleMenu();
 
-  console.log(visibleMenu);
-
   return (
-    <div className={styles.headerWrapper}>
+    <div className={styles.navBarWrapper}>
       <img src={Logo} alt="Arthur Shevtsov" />
       <div className={styles.wrapperMenu}>
         <AnimatePresence>
@@ -47,20 +45,65 @@ const Header: FC = () => {
               >
                 <ul onClick={() => handlerVisibleMenu(false)}>
                   <li>
-                    <NavLink to={"/"}>Home</NavLink>
+                    <Link
+                      to="header"
+                      activeClass="active"
+                      spy={true}
+                      smooth={true}
+                      offset={50}
+                      duration={500}
+                    >
+                      Home
+                    </Link>
                   </li>
 
                   <li>
-                    <NavLink to={"/technologyStack"}>Technology stack</NavLink>
+                    <Link
+                      to="technologyStack"
+                      activeClass="active"
+                      spy={true}
+                      smooth={true}
+                      offset={50}
+                      duration={500}
+                    >
+                      Technology stack
+                    </Link>
                   </li>
                   <li>
-                    <NavLink to={"/projects"}>Projects</NavLink>
+                    <Link
+                      to="projects"
+                      activeClass="active"
+                      spy={true}
+                      smooth={true}
+                      offset={50}
+                      duration={500}
+                    >
+                      Projects
+                    </Link>
                   </li>
                   <li>
-                    <NavLink to={"/aboutMe"}>About me</NavLink>
+                    <Link
+                      to="aboutMe"
+                      activeClass="active"
+                      spy={true}
+                      smooth={true}
+                      offset={50}
+                      duration={500}
+                    >
+                      About me
+                    </Link>
                   </li>
                   <li>
-                    <NavLink to={"/contacts"}>Contacts</NavLink>
+                    <Link
+                      to="contacts"
+                      activeClass="active"
+                      spy={true}
+                      smooth={true}
+                      offset={50}
+                      duration={500}
+                    >
+                      Contacts
+                    </Link>
                   </li>
                 </ul>
               </motion.nav>
@@ -72,4 +115,4 @@ const Header: FC = () => {
   );
 };
 
-export default Header;
+export default NavBar;
