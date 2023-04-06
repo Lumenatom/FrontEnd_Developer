@@ -12,24 +12,17 @@ const NavBar: FC = () => {
 
   return (
     <div className={styles.navBarWrapper}>
-      <img src={Logo} alt="Arthur Shevtsov" />
+      <img className={styles.logo} src={Logo} alt="Arthur Shevtsov" />
       <div className={styles.wrapperMenu}>
         <AnimatePresence>
-          <motion.span
-            initial={{ width: 0 }}
-            animate={{ width: "auto" }}
-            exit={{ width: 0 }}
-            style={{ overflow: "hidden" }}
-          >
-            {visibleMenu ? (
-              <IoClose
-                className={styles.closeIconMenu}
-                onClick={() => handlerVisibleMenu(false)}
-              />
-            ) : (
-              <SlMenu onClick={() => handlerVisibleMenu(true)} />
-            )}
-          </motion.span>
+          {visibleMenu ? (
+            <IoClose
+              className={styles.closeIconMenu}
+              onClick={() => handlerVisibleMenu(false)}
+            />
+          ) : (
+            <SlMenu onClick={() => handlerVisibleMenu(true)} />
+          )}
         </AnimatePresence>
         <div className={styles.menu}>
           <AnimatePresence>

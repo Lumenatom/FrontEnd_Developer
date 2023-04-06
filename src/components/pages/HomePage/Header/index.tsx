@@ -66,7 +66,7 @@ const Header: FC = () => {
           </a>
         </button>
         <button className={styles.buttonContact}>
-          <span>Contact me</span>
+          <a href="mailto:Lumenatom@gmail.com">Contact me</a>
         </button>
       </motion.div>
     </div>

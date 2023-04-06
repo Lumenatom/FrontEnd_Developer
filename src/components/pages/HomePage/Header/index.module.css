@@ -1,6 +1,6 @@
 .headerWrapper {
   margin-top: -50px;
-  padding: 60px 0 100px;
+  padding: 60px 0 110px;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -108,7 +108,7 @@
   margin: 0 auto;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-.headerWrapper .buttons .buttonContact span {
+.headerWrapper .buttons .buttonContact a {
   position: relative;
   z-index: 1;
 }

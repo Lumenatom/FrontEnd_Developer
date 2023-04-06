@@ -6,15 +6,15 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 999;
+  z-index: 99;
 }
-.navBarWrapper img {
+.navBarWrapper .logo {
   width: 45px;
   margin: 20px;
   transition: all 0.3s ease-out;
   cursor: pointer;
 }
-.navBarWrapper img:hover {
+.navBarWrapper .logo:hover {
   scale: 1.1;
   transition: all 0.3s ease-out;
 }
@@ -26,20 +26,21 @@
   z-index: 999;
 }
 .navBarWrapper .wrapperMenu svg {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   fill: #ffffff;
   cursor: pointer;
   transition: all 0.3s ease-out;
   margin: 20px;
 }
 .navBarWrapper .wrapperMenu svg:hover {
-  scale: 1.2;
+  scale: 1.05;
   transition: all 0.3s ease-out;
 }
 .navBarWrapper .wrapperMenu .closeIconMenu {
   width: 45px;
   height: 45px;
+  margin-right: 0;
 }
 .navBarWrapper .menu {
   backdrop-filter: blur(7px);
