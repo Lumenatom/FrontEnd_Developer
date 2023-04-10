@@ -28,13 +28,13 @@ const NavBar: FC = () => {
           <AnimatePresence>
             {visibleMenu && (
               <motion.nav
-                initial={{ width: 0, opacity: 0 }}
+                initial={{ width: "100vw", height: "0", opacity: 0 }}
                 animate={{
                   width: "100vw",
                   height: "100vh",
                   opacity: 1,
                 }}
-                exit={{ width: 0, opacity: 0 }}
+                exit={{ width: "100vw", height: "-100%", opacity: 0 }}
               >
                 <ul onClick={() => handlerVisibleMenu(false)}>
                   <li>
@@ -45,6 +45,7 @@ const NavBar: FC = () => {
                       smooth={true}
                       offset={50}
                       duration={500}
+                      onClick={() => handlerVisibleMenu(false)}
                     >
                       Home
                     </Link>
@@ -58,6 +59,7 @@ const NavBar: FC = () => {
                       smooth={true}
                       offset={50}
                       duration={500}
+                      onClick={() => handlerVisibleMenu(false)}
                     >
                       Technology stack
                     </Link>
@@ -70,6 +72,7 @@ const NavBar: FC = () => {
                       smooth={true}
                       offset={50}
                       duration={500}
+                      onClick={() => handlerVisibleMenu(false)}
                     >
                       Projects
                     </Link>
@@ -82,6 +85,7 @@ const NavBar: FC = () => {
                       smooth={true}
                       offset={50}
                       duration={500}
+                      onClick={() => handlerVisibleMenu(false)}
                     >
                       About me
                     </Link>
@@ -94,6 +98,7 @@ const NavBar: FC = () => {
                       smooth={true}
                       offset={50}
                       duration={500}
+                      onClick={() => handlerVisibleMenu(false)}
                     >
                       Contacts
                     </Link>
