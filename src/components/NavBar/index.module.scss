@@ -59,6 +59,7 @@
 
 
   .menu {
+    background: rgba(#181817, 0.7);
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
 
@@ -113,7 +114,5 @@
     }
   }
 
-  .menu:before {
-    background: #181817;
-  }
+
 }

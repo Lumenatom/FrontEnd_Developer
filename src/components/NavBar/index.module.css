@@ -43,6 +43,7 @@
   margin-right: 0;
 }
 .navBarWrapper .menu {
+  background: rgba(24, 24, 23, 0.7);
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
 }
@@ -81,9 +82,6 @@
 }
 .navBarWrapper .menu nav ul li a[class=active] {
   border-bottom: 1px solid #fff900;
-}
-.navBarWrapper .menu:before {
-  background: #181817;
 }
 
 /*# sourceMappingURL=index.module.css.map */
