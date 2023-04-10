@@ -50,6 +50,7 @@
 
 
   }
+
   .closeIconMenu {
     width: 45px;
     height: 45px;
@@ -60,7 +61,6 @@
   .menu {
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
-
 
 
     nav {
@@ -113,4 +113,8 @@
     }
   }
 
+  .menu:before {
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+  }
 }

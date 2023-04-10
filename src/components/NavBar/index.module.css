@@ -82,5 +82,9 @@
 .navBarWrapper .menu nav ul li a[class=active] {
   border-bottom: 1px solid #fff900;
 }
+.navBarWrapper .menu:before {
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
 
 /*# sourceMappingURL=index.module.css.map */
