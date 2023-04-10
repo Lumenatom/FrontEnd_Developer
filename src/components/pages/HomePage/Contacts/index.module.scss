@@ -1,14 +1,17 @@
 @import "../../../../utils/variable.scss";
 
 
-.contactsWrapper{
+.contactsWrapper {
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 100px;
-  margin-bottom: 50px;
+  padding-top: 80px;
+  background: url("../../../../assets/bg.png");
+  background-size: cover;
+  background-position: center;
+
 
   .title {
     color: $colorWhite;
@@ -16,4 +19,82 @@
     font-size: 32px;
     font-weight: $fontWait100;
   }
+
+
+  .links {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    span {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+        width: 300px;
+        height: 60px;
+        border: 1px solid $colorWhite;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        transition: all ease 0.5s;
+
+        svg {
+          fill: $colorWhite;
+          width: 30px;
+          height: 30px;
+          transition: all ease 0.5s;
+
+        }
+
+        h2 {
+          width: 70%;
+          color: $colorWhite;
+          font-family: $fontPoppins;
+          font-size: $fontSize16;
+          font-weight: $fontWait200;
+          transition: all ease 0.5s;
+
+        }
+
+        &:hover {
+          scale: 1.1;
+          background: $colorWhite;
+
+          svg {
+            fill: $colorBlack;
+
+          }
+
+          h2 {
+            color: $colorBlack;
+          }
+
+        }
+      }
+
+      svg {
+        width: 20px;
+        height: 20px;
+        fill: white;
+        cursor: pointer;
+        transition: all ease 0.5s;
+
+        &:hover {
+          scale: 1.2;
+        }
+
+        &:active {
+          scale: 0.9;
+        }
+      }
+    }
+  }
+
+
 }

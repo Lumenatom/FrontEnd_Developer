@@ -4,14 +4,76 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 100px;
-  margin-bottom: 50px;
+  padding-top: 80px;
+  background: url("../../../../assets/bg.png");
+  background-size: cover;
+  background-position: center;
 }
 .contactsWrapper .title {
   color: #ffffff;
   font-family: "Poppins", sans-serif;
   font-size: 32px;
   font-weight: 100;
+}
+.contactsWrapper .links {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.contactsWrapper .links span {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.contactsWrapper .links span a {
+  text-decoration: none;
+  width: 300px;
+  height: 60px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  transition: all ease 0.5s;
+}
+.contactsWrapper .links span a svg {
+  fill: #ffffff;
+  width: 30px;
+  height: 30px;
+  transition: all ease 0.5s;
+}
+.contactsWrapper .links span a h2 {
+  width: 70%;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  transition: all ease 0.5s;
+}
+.contactsWrapper .links span a:hover {
+  scale: 1.1;
+  background: #ffffff;
+}
+.contactsWrapper .links span a:hover svg {
+  fill: #000000;
+}
+.contactsWrapper .links span a:hover h2 {
+  color: #000000;
+}
+.contactsWrapper .links span svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+.contactsWrapper .links span svg:hover {
+  scale: 1.2;
+}
+.contactsWrapper .links span svg:active {
+  scale: 0.9;
 }
 
 /*# sourceMappingURL=index.module.css.map */

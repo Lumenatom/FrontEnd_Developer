@@ -31,16 +31,16 @@ const Header: FC = () => {
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 2 }}
       >
-        <a href="#">
+        <a target="_blank" href="https://www.linkedin.com/in/lumenatom/">
           <ImLinkedin />
         </a>
-        <a href="#">
+        <a target="_blank" href="https://t.me/Arthur_Shevtsov">
           <BsTelegram />
         </a>
-        <a href="#">
+        <a target="_blank" href="mailto:Lumenatom@gmail.com">
           <GrMail />
         </a>
-        <a href="#">
+        <a target="_blank" href="https://github.com/Lumenatom">
           <GoMarkGithub />
         </a>
         <hr />
