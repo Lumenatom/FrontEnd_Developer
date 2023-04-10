@@ -83,8 +83,7 @@
   border-bottom: 1px solid #fff900;
 }
 .navBarWrapper .menu:before {
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
+  background: #181817;
 }
 
 /*# sourceMappingURL=index.module.css.map */
