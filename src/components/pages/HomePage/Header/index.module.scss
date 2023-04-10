@@ -18,34 +18,35 @@
   background-position: center;
   overflow: hidden;
 
-.links{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  position: absolute;
-  left: 2%;
-  top: 35%;
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    left: 2%;
+    top: 35%;
 
-  a{
-    text-decoration: none;
+    a {
+      text-decoration: none;
 
-    svg{
-      fill: $colorWhite ;
-      width: 25px;
-      height: 25px;
-      transition: $transition;
-
-
-      &:hover {
-        scale: 1.2;
+      svg {
+        fill: $colorWhite;
+        width: 25px;
+        height: 25px;
         transition: $transition;
+
+
+        &:hover {
+          scale: 1.2;
+          transition: $transition;
+        }
       }
     }
+
+    hr {
+      height: 100px;
+    }
   }
-  hr{
-    height: 100px;
-  }
-}
 
   .description {
     display: flex;
@@ -58,7 +59,7 @@
       font-family: $fontRaleway;
       font-weight: $fontWait300;
       font-size: 35px;
-      color: $colorWhite ;
+      color: $colorWhite;
       text-align: left;
       margin-bottom: 10px;
       padding-top: 70px;
@@ -75,7 +76,7 @@
       font-family: $fontRaleway;
       font-weight: $fontWait300;
       font-size: 37px;
-      color: $colorWhite ;
+      color: $colorWhite;
     }
   }
 
@@ -88,7 +89,7 @@
       font-family: $fontPoppins;
       font-weight: $fontWait600;
       font-size: 16px;
-      color: $colorWhite ;
+      color: $colorWhite;
     }
 
     .buttonCv {
@@ -100,7 +101,7 @@
       outline: none;
       overflow: hidden;
       position: relative;
-      color: $colorWhite ;
+      color: $colorWhite;
       font-weight: 700;
       font-size: 15px;
       background-color: #222;
@@ -121,7 +122,7 @@
         top: 0;
         height: 490%;
         width: 140%;
-        background: $colorOrange ;
+        background: $colorOrange;
         -webkit-transition: all .5s ease-in-out;
         transition: all .5s ease-in-out;
         -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
@@ -143,7 +144,7 @@
       outline: none;
       overflow: hidden;
       position: relative;
-      color: $colorWhite ;
+      color: $colorWhite;
       font-weight: 700;
       font-size: 15px;
       background-color: #222;
@@ -164,7 +165,7 @@
         top: 0;
         height: 490%;
         width: 140%;
-        background: $colorOrange ;
+        background: $colorOrange;
         background: $colorSkyBlue;
         -webkit-transition: all .5s ease-in-out;
         transition: all .5s ease-in-out;
@@ -178,5 +179,46 @@
         transform: translateX(-9%) translateY(-25%) rotate(45deg);
       }
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headerWrapper .description h6 {
+    font-size: 24px;
+  }
+  .headerWrapper .description h2 {
+    font-size: 60px;
+  }
+  .headerWrapper .description h3 {
+    font-size: 20px;
+  }
+  .headerWrapper .buttons .buttonCv {
+    padding: 10px 30px;
+  }
+  .headerWrapper .buttons .buttonCv a {
+    font-size: 14px
+  }
+  .headerWrapper .buttons .buttonCv:after {
+    transform: translateX(-99%) translateY(-25%) rotate(55deg);
+  }
+  .headerWrapper .buttons .buttonContact {
+    padding: 10px 30px;
+  }
+  .headerWrapper .buttons .buttonContact a {
+    font-size: 14px
+  }
+  .headerWrapper .buttons .buttonContact:after {
+    transform: translateX(75%) translateY(-40%) rotate(50deg);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .headerWrapper .links {
+    gap: 10px;
+    position: absolute;
+    left: 2%;
+    top: 45%;
+  }.headerWrapper .links hr {
+    height: 30px;
   }
 }

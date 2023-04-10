@@ -155,4 +155,45 @@
   transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
 
+@media screen and (max-width: 768px) {
+  .headerWrapper .description h6 {
+    font-size: 24px;
+  }
+  .headerWrapper .description h2 {
+    font-size: 60px;
+  }
+  .headerWrapper .description h3 {
+    font-size: 20px;
+  }
+  .headerWrapper .buttons .buttonCv {
+    padding: 10px 30px;
+  }
+  .headerWrapper .buttons .buttonCv a {
+    font-size: 14px;
+  }
+  .headerWrapper .buttons .buttonCv:after {
+    transform: translateX(-99%) translateY(-25%) rotate(55deg);
+  }
+  .headerWrapper .buttons .buttonContact {
+    padding: 10px 30px;
+  }
+  .headerWrapper .buttons .buttonContact a {
+    font-size: 14px;
+  }
+  .headerWrapper .buttons .buttonContact:after {
+    transform: translateX(75%) translateY(-40%) rotate(50deg);
+  }
+}
+@media screen and (max-width: 375px) {
+  .headerWrapper .links {
+    gap: 10px;
+    position: absolute;
+    left: 2%;
+    top: 45%;
+  }
+  .headerWrapper .links hr {
+    height: 30px;
+  }
+}
+
 /*# sourceMappingURL=index.module.css.map */
