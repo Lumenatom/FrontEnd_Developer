@@ -59,7 +59,7 @@
 
 
   .menu {
-    background: rgba(#181817, 0.7);
+    background: #181817;
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
 
@@ -115,4 +115,11 @@
   }
 
 
+}
+
+@media screen and (max-width: 768px) {
+
+  nav {
+    width: 100%;
+  }
 }
