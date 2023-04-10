@@ -41,11 +41,18 @@
   width: 45px;
   height: 45px;
   margin-right: 0;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  right: 20px;
 }
 .navBarWrapper .menu {
-  background: #181817;
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
+  background: rgba(24, 24, 23, 0.9);
+}
+.navBarWrapper .menu nav {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
 }
 .navBarWrapper .menu nav ul {
   display: flex;

@@ -28,13 +28,13 @@ const NavBar: FC = () => {
           <AnimatePresence>
             {visibleMenu && (
               <motion.nav
-                initial={{ width: 0, opacity: 1 }}
+                initial={{ width: 0, opacity: 0 }}
                 animate={{
-                  width: "280px",
+                  width: "100vw",
                   height: "100vh",
                   opacity: 1,
                 }}
-                exit={{ width: 0, opacity: 1 }}
+                exit={{ width: 0, opacity: 0 }}
               >
                 <ul onClick={() => handlerVisibleMenu(false)}>
                   <li>
