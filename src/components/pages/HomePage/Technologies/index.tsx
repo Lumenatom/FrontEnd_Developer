@@ -17,7 +17,7 @@ const Technologies: FC = () => {
       opacity: 1,
       y: 0,
       transition: {
-        delay: i * 0.1,
+        delay: i * 0.2,
         type: "spring",
         stiffness: 70,
       },
@@ -50,7 +50,7 @@ const Technologies: FC = () => {
             whileInView="visible"
             viewport={{ once: true }}
             initial="hidden"
-            custom={4 + i}
+            custom={i}
           >
             <img src={el.img} alt={el.name} />
             <h2>{el.name}</h2>
@@ -65,7 +65,7 @@ const Technologies: FC = () => {
             whileInView="visible"
             initial="hidden"
             viewport={{ once: true }}
-            custom={8 + i}
+            custom={i}
           >
             <img src={el.img} alt={el.name} />
             <h2>{el.name}</h2>

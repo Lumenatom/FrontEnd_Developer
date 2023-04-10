@@ -18,7 +18,34 @@
   background-position: center;
   overflow: hidden;
 
+.links{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  left: 2%;
+  top: 35%;
 
+  a{
+    text-decoration: none;
+
+    svg{
+      fill: $colorWhite ;
+      width: 25px;
+      height: 25px;
+      transition: $transition;
+
+
+      &:hover {
+        scale: 1.2;
+        transition: $transition;
+      }
+    }
+  }
+  hr{
+    height: 100px;
+  }
+}
 
   .description {
     display: flex;

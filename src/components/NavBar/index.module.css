@@ -25,7 +25,7 @@
   top: 0;
   z-index: 999;
 }
-.navBarWrapper .wrapperMenu svg {
+.navBarWrapper svg {
   width: 30px;
   height: 30px;
   fill: #ffffff;
@@ -33,11 +33,11 @@
   transition: all 0.3s ease-out;
   margin: 20px;
 }
-.navBarWrapper .wrapperMenu svg:hover {
-  scale: 1.05;
+.navBarWrapper svg:hover {
+  scale: 1.2;
   transition: all 0.3s ease-out;
 }
-.navBarWrapper .wrapperMenu .closeIconMenu {
+.navBarWrapper .closeIconMenu {
   width: 45px;
   height: 45px;
   margin-right: 0;

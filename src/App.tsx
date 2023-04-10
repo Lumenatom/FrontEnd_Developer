@@ -1,11 +1,8 @@
-import React, { FC, useEffect } from "react";
+import React, { FC } from "react";
 import styles from "./App.module.scss";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./components/pages/HomePage";
-import Header from "./components/NavBar";
-import Loader from "./components/Loader";
-import PagesNull from "./components/pages/PagesNull/PagesNull";
-import useVisibleMenu from "./hooks/useVisibleMenu";
+import NavBar from "./components/NavBar";
 
 const App: FC = () => {
   // useEffect(() => {
@@ -14,7 +11,7 @@ const App: FC = () => {
   return (
     <div className={styles.App}>
       <BrowserRouter basename={"/FrontEnd_Developer/"}>
-        <Header />
+        <NavBar />
         <div className={styles.container}>
           <Routes>
             <Route path={"/"} element={<HomePage />} />

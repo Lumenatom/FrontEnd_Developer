@@ -15,6 +15,30 @@
   background-position: center;
   overflow: hidden;
 }
+.headerWrapper .links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  left: 2%;
+  top: 35%;
+}
+.headerWrapper .links a {
+  text-decoration: none;
+}
+.headerWrapper .links a svg {
+  fill: #ffffff;
+  width: 25px;
+  height: 25px;
+  transition: all 0.3s ease-out;
+}
+.headerWrapper .links a svg:hover {
+  scale: 1.2;
+  transition: all 0.3s ease-out;
+}
+.headerWrapper .links hr {
+  height: 100px;
+}
 .headerWrapper .description {
   display: flex;
   flex-direction: column;

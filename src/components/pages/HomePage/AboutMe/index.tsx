@@ -5,7 +5,7 @@ import PagesNull from "../../PagesNull/PagesNull";
 const AboutMe: FC = () => {
   return (
     <div className={styles.aboutMeWrapper} id="aboutMe">
-      <h2 className={styles.title}>Experience</h2>
+      <h2 className={styles.title}>About me</h2>
       <PagesNull />
     </div>
   );

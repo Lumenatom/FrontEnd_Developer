@@ -31,26 +31,29 @@
     top: 0;
     z-index: 999;
 
-    svg {
-      width: 30px;
-      height: 30px;
-      fill: $colorWhite;
-      cursor: pointer;
+
+  }
+
+  svg {
+    width: 30px;
+    height: 30px;
+    fill: $colorWhite;
+    cursor: pointer;
+    transition: $transition;
+    margin: 20px;
+
+
+    &:hover {
+      scale: 1.2;
       transition: $transition;
-      margin: 20px;
-
-
-      &:hover {
-        scale: 1.05;
-        transition: $transition;
-      }
     }
 
-    .closeIconMenu {
-      width: 45px;
-      height: 45px;
-      margin-right: 0;
-    }
+
+  }
+  .closeIconMenu {
+    width: 45px;
+    height: 45px;
+    margin-right: 0;
   }
 
 

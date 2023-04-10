@@ -1,10 +1,12 @@
 import { FC } from "react";
 import styles from "./index.module.scss";
-import useVisibleMenu from "../../../../hooks/useVisibleMenu";
 import { motion } from "framer-motion";
+import { GoMarkGithub } from "react-icons/go";
+import { BsTelegram } from "react-icons/bs";
+import { ImLinkedin } from "react-icons/im";
+import { GrMail } from "react-icons/gr";
 
 const Header: FC = () => {
-  const { handlerVisibleMenu } = useVisibleMenu();
   const listVariants = {
     visible: (i: number) => ({
       opacity: 1,
@@ -20,18 +22,35 @@ const Header: FC = () => {
       opacity: 0,
     },
   };
+
   return (
-    <div
-      onClick={() => handlerVisibleMenu(false)}
-      className={styles.headerWrapper}
-      id="header"
-    >
+    <div className={styles.headerWrapper} id="header">
+      <motion.div
+        className={styles.links}
+        initial={{ x: "-1000%", opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 2 }}
+      >
+        <a href="#">
+          <ImLinkedin />
+        </a>
+        <a href="#">
+          <BsTelegram />
+        </a>
+        <a href="#">
+          <GrMail />
+        </a>
+        <a href="#">
+          <GoMarkGithub />
+        </a>
+        <hr />
+      </motion.div>
       <div className={styles.description}>
         <motion.h6
           variants={listVariants}
           initial="hidden"
           animate="visible"
-          custom={1}
+          custom={0}
         >
           HELLO
         </motion.h6>
@@ -39,7 +58,7 @@ const Header: FC = () => {
           variants={listVariants}
           initial="hidden"
           animate="visible"
-          custom={2}
+          custom={1}
         >
           Iʼm ARTHUR
           <br /> SHEVTSOV
@@ -48,7 +67,7 @@ const Header: FC = () => {
           variants={listVariants}
           initial="hidden"
           animate="visible"
-          custom={3}
+          custom={2}
         >
           FRONT-END DEVELOPER
         </motion.h3>
@@ -57,7 +76,7 @@ const Header: FC = () => {
         variants={listVariants}
         initial="hidden"
         animate="visible"
-        custom={4}
+        custom={3}
         className={styles.buttons}
       >
         <button className={styles.buttonCv}>
