@@ -14,23 +14,23 @@ import NativeImg from "../../../../assets/Technologies/native.webp";
 import GitImg from "../../../../assets/Technologies/git.webp";
 
 export const favoriteTechnologies = [
-  { name: "JavaScript", img: JsImg },
-  { name: "TypeScript", img: TsImg },
   { name: "React", img: ReactImg },
+  { name: "TypeScript", img: TsImg },
+  { name: "JavaScript", img: JsImg },
+  { name: "Redux Toolkit", img: ReduxImg },
   { name: "React Native / Expo CLI ", img: NativeImg },
-  { name: "Redux", img: ReduxImg },
 ];
 
 export const stylesTechnologies = [
-  { name: "HTML / CSS", img: HtmlImg },
   { name: "Sass", img: SassImg },
   { name: "Styled Component", img: StyledImg },
   { name: "Tailwind CSS", img: TailwindImg },
+  { name: "HTML / CSS", img: HtmlImg },
   { name: "Framer Motion", img: MotionImg },
 ];
 export const supportTechnologies = [
-  { name: "Rest API", img: RestImg },
   { name: "Jest", img: JestImg },
-  { name: "Vite", img: ViteImg },
+  { name: "Rest API", img: RestImg },
   { name: "Git", img: GitImg },
+  { name: "Vite", img: ViteImg },
 ];
