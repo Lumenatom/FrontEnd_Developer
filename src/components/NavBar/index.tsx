@@ -61,7 +61,7 @@ const NavBar: FC = () => {
                       duration={500}
                       onClick={() => handlerVisibleMenu(false)}
                     >
-                      Technology stack
+                      Technology
                     </Link>
                   </li>
                   <li>

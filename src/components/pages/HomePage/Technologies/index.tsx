@@ -26,7 +26,7 @@ const Technologies: FC = () => {
 
   return (
     <div className={styles.technologiesWrapper} id="technologyStack">
-      <h2 className={styles.title}>Technology stack</h2>
+      <h2 className={styles.title}>Technology</h2>
       <div className={styles.favoriteTechnologies}>
         {favoriteTechnologies.map((el, i) => (
           <motion.div
