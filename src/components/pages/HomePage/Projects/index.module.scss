@@ -1,7 +1,7 @@
 @import "../../../../utils/variable.scss";
 
 
-.projectsWrapper{
+.projectsWrapper {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -15,5 +15,30 @@
     font-family: $fontPoppins;
     font-size: 32px;
     font-weight: $fontWait100;
+  }
+
+  .project{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 0 50px;
+    gap: 35px;
+
+    .desc{
+      background: white;
+      width: 50%;
+      height: 200px;
+    }
+  }
+}
+
+@media screen  and (max-width: 555px){
+  .Project_1{
+    flex-direction: column;
+
+    .desc{
+      width: 100%;
+    }
   }
 }
