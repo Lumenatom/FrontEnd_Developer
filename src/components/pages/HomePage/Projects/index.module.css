@@ -40,13 +40,16 @@
 }
 .projectsWrapper .project .InfoProject .mainInfo p {
   font-size: 14px;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 120%;
+  text-align: center;
 }
 .projectsWrapper .project .InfoProject .mainInfo span {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
+  margin-top: 25px;
 }
 .projectsWrapper .project .InfoProject .mainInfo span p {
   font-size: 16px;

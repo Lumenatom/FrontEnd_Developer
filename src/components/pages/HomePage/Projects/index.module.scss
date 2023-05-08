@@ -45,14 +45,17 @@
 
         p {
           font-size: $fontSize14;
-          font-weight: $fontWait200;
+          font-weight: $fontWait300;
           line-height: 120%;
+          text-align: center;
         }
 
         span {
           display: flex;
           flex-wrap: wrap;
+          justify-content: center;
           gap: 10px;
+          margin-top: 25px;
 
           p {
             font-size: $fontSize16;
