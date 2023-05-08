@@ -192,6 +192,7 @@
   .headerWrapper .description h3 {
     font-size: 20px;
   }
+
   .headerWrapper .buttons .buttonCv {
     padding: 10px 30px;
   }
@@ -212,6 +213,11 @@
   }
 }
 
+@media screen and (max-width: 555px) {
+  .headerWrapper .buttons{
+    margin-bottom: 150px;
+  }
+}
 @media screen and (max-width: 375px) {
   .headerWrapper .links {
     gap: 10px;

@@ -3,7 +3,6 @@
 
 .projectsWrapper {
   width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,28 +16,99 @@
     font-weight: $fontWait100;
   }
 
-  .project{
-    width: 100%;
+  .project {
+    width: 95%;
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
     padding: 0 50px;
     gap: 35px;
 
-    .desc{
-      background: white;
+    .InfoProject {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       width: 50%;
-      height: 200px;
+      font-family: $fontPoppins;
+      color: $colorWhite;
+
+      .mainInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        h2 {
+          text-align: center;
+          font-size: $fontSize24;
+          font-weight: $fontWait300;
+        }
+
+        p {
+          font-size: $fontSize14;
+          font-weight: $fontWait200;
+          line-height: 120%;
+        }
+
+        span {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+
+          p {
+            font-size: $fontSize16;
+            font-weight: $fontWait400;
+            line-height: 100%;
+            border-bottom: 1px solid $colorGray;
+            padding: 2px;
+          }
+        }
+      }
+
+      .buttons {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 25px;
+
+        a {
+          text-decoration: none;
+          font-family: $fontPoppins;
+          color: $colorWhite;
+          font-weight: $fontWait200;
+          padding: 10px 25px;
+          border: 1px solid $colorGray;
+          border-radius: 10px;
+          font-size: $fontSize20;
+          background: $colorGray;
+          transition: $transition;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          margin-top: 50px;
+
+          &:hover {
+            background: $colorWhite;
+            color: $colorBlack;
+            scale: 1.1;
+          }
+        }
+      }
+
     }
   }
 }
 
-@media screen  and (max-width: 555px){
-  .Project_1{
-    flex-direction: column;
+@media screen and (max-width: 555px) {
+  .projectsWrapper {
+    .project {
+      flex-direction: column;
+      padding: 0;
+      margin-bottom: 100px;
 
-    .desc{
-      width: 100%;
+      .InfoProject {
+        width: 100%;
+      }
     }
   }
+
 }

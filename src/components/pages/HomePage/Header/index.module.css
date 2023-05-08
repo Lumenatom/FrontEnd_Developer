@@ -184,6 +184,11 @@
     transform: translateX(75%) translateY(-40%) rotate(50deg);
   }
 }
+@media screen and (max-width: 555px) {
+  .headerWrapper .buttons {
+    margin-bottom: 150px;
+  }
+}
 @media screen and (max-width: 375px) {
   .headerWrapper .links {
     gap: 10px;

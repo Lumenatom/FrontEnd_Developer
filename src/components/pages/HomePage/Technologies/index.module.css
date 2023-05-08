@@ -62,5 +62,11 @@
     padding: 0 10px;
   }
 }
+@media screen and (max-width: 555px) {
+  .technologiesWrapper .item img {
+    width: 150px;
+    height: 150px;
+  }
+}
 
 /*# sourceMappingURL=index.module.css.map */
