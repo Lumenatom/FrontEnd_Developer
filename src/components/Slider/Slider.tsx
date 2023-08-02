@@ -8,6 +8,7 @@ import "swiper/css/effect-creative";
 type Props = {
   data: string[];
 };
+
 const Slider: FC<Props> = ({ data }) => {
   return (
     <Swiper
