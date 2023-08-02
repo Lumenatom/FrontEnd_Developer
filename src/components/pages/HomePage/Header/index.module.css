@@ -93,6 +93,10 @@
   padding: 17px 60px;
   margin: 0 auto;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all ease 0.5s;
+}
+.headerWrapper .buttons .buttonCv:active {
+  scale: 0.9;
 }
 .headerWrapper .buttons .buttonCv a {
   position: relative;
@@ -131,6 +135,10 @@
   padding: 17px 60px;
   margin: 0 auto;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all ease 0.5s;
+}
+.headerWrapper .buttons .buttonContact:active {
+  scale: 0.9;
 }
 .headerWrapper .buttons .buttonContact a {
   position: relative;

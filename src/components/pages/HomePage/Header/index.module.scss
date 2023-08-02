@@ -108,12 +108,16 @@
       padding: 17px 60px;
       margin: 0 auto;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+transition: all ease 0.5s;
 
-
+      &:active {
+        scale: 0.9;
+      }
       & a {
         position: relative;
         z-index: 1;
       }
+
 
       &:after {
         content: "";
@@ -151,7 +155,11 @@
       padding: 17px 60px;
       margin: 0 auto;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+      transition: all ease 0.5s;
 
+      &:active {
+        scale: 0.9;
+      }
 
       & a {
         position: relative;

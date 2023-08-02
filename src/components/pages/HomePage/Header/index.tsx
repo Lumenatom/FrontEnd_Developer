@@ -5,6 +5,7 @@ import { GoMarkGithub } from "react-icons/go";
 import { BsTelegram } from "react-icons/bs";
 import { ImLinkedin } from "react-icons/im";
 import { GrMail } from "react-icons/gr";
+import { Link } from "react-scroll";
 
 const Header: FC = () => {
   const listVariants = {
@@ -85,7 +86,16 @@ const Header: FC = () => {
           </a>
         </button>
         <button className={styles.buttonContact}>
-          <a href="mailto:Lumenatom@gmail.com">Contact me</a>
+          <Link
+            to="contacts"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            Contact me
+          </Link>
         </button>
       </motion.div>
     </div>
