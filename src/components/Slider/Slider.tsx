@@ -14,10 +14,10 @@ const Slider: FC<Props> = ({ data }) => {
       modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={50}
       slidesPerView={1}
-      autoplay={{
-        delay: 2500,
-        disableOnInteraction: false,
-      }}
+      // autoplay={{
+      //   delay: 2500,
+      //   disableOnInteraction: false,
+      // }}
       navigation
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
