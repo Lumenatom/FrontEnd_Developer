@@ -22,14 +22,18 @@ const Projects: FC = () => {
               </span>
             </div>
             <div className={styles.buttons}>
-              <a target="_blank" href={el.link}>
-                <VscPreview />
-                View project
-              </a>
-              <a target="_blank" href={el.gitHub}>
-                <AiFillGithub />
-                GitHub
-              </a>
+              {el?.link && (
+                <a target="_blank" href={el.link}>
+                  <VscPreview />
+                  View project
+                </a>
+              )}
+              {el?.gitHub && (
+                <a target="_blank" href={el.gitHub}>
+                  <AiFillGithub />
+                  GitHub
+                </a>
+              )}
             </div>
           </div>
         </div>
