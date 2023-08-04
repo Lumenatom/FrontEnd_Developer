@@ -21,9 +21,54 @@ import Pic_18 from "../assets/Projects/Project_3/pic_18.png";
 import Pic_19 from "../assets/Projects/Project_3/pic_19.png";
 import Pic_20 from "../assets/Projects/Project_3/pic_20.png";
 import Pic_21 from "../assets/Projects/Project_3/pic_21.png";
+
+import Pic_22 from "../assets/Projects/Project_4/pic_22.png";
+import Pic_23 from "../assets/Projects/Project_4/pic_23.png";
+import Pic_24 from "../assets/Projects/Project_4/pic_24.png";
+import Pic_25 from "../assets/Projects/Project_4/pic_25.png";
+import Pic_26 from "../assets/Projects/Project_4/pic_26.png";
+import Pic_27 from "../assets/Projects/Project_4/pic_27.png";
+import Pic_28 from "../assets/Projects/Project_4/pic_28.png";
+import Pic_29 from "../assets/Projects/Project_4/pic_29.png";
+import Pic_30 from "../assets/Projects/Project_4/pic_30.png";
+import Pic_31 from "../assets/Projects/Project_4/pic_31.png";
+import Pic_32 from "../assets/Projects/Project_4/pic_32.png";
+import Pic_33 from "../assets/Projects/Project_4/pic_33.png";
+import Pic_34 from "../assets/Projects/Project_4/pic_34.png";
 import { ProjectInfo } from "../types/types";
 
 export const projectsData: ProjectInfo[] = [
+  {
+    id: "4",
+    title: "Landing page Car Hub",
+    description:
+      "Pomodoro Timer is a handy tool for managing the hour. Set a short timer for focus, pause and long pause. Easily mingle between cycles, nail the focus and focus. Take awareness, if the skin cycle is completed, helping you to increase productivity and efficiency in work. In addition, give the opportunity to improve with those supplements, so that you can choose the best visual image.",
+    technology: [
+      "React",
+      "Next JS",
+      "TypeScript",
+      "hooks",
+      "Tailwind Css",
+      "Animation",
+    ],
+    images: [
+      Pic_22,
+      Pic_23,
+      Pic_24,
+      Pic_25,
+      Pic_26,
+      Pic_27,
+      Pic_28,
+      Pic_29,
+      Pic_30,
+      Pic_31,
+      Pic_32,
+      Pic_33,
+      Pic_34,
+    ],
+    gitHub: "https://github.com/Lumenatom/Pomodoro_Timer",
+    link: "https://lumenatom.github.io/Pomodoro_Timer/",
+  },
   {
     id: "3",
     title: "Pomodoro Timer",
