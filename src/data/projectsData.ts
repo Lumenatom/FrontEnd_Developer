@@ -42,7 +42,7 @@ export const projectsData: ProjectInfo[] = [
     id: "4",
     title: "Landing page Car Hub",
     description:
-      "Pomodoro Timer is a handy tool for managing the hour. Set a short timer for focus, pause and long pause. Easily mingle between cycles, nail the focus and focus. Take awareness, if the skin cycle is completed, helping you to increase productivity and efficiency in work. In addition, give the opportunity to improve with those supplements, so that you can choose the best visual image.",
+      "The ideal project for the selection of cars. Selection of different brands, efficiency and durability for coristuvachs.",
     technology: [
       "React",
       "Next JS",
@@ -66,8 +66,8 @@ export const projectsData: ProjectInfo[] = [
       Pic_33,
       Pic_34,
     ],
-    gitHub: "https://github.com/Lumenatom/Pomodoro_Timer",
-    link: "https://lumenatom.github.io/Pomodoro_Timer/",
+    gitHub: "https://github.com/Lumenatom/car_shop",
+    link: "https://car-shop-mu.vercel.app/",
   },
   {
     id: "3",
