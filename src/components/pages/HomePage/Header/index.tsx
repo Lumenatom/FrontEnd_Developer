@@ -70,7 +70,7 @@ const Header: FC = () => {
           animate="visible"
           custom={2}
         >
-          FRONT-END DEVELOPER
+          FRONT-END ENGINEER
         </motion.h3>
       </div>
       <motion.div

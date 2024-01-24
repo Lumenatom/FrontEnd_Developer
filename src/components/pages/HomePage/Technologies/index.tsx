@@ -1,9 +1,9 @@
 import { FC } from "react";
 import styles from "./index.module.scss";
 import {
-  favoriteTechnologies,
+  favoriteTechnologies, otherTechnologies,
   stylesTechnologies,
-  supportTechnologies,
+  supportTechnologies
 } from "./dataTechnologies";
 import { motion } from "framer-motion";
 
@@ -42,21 +42,6 @@ const Technologies: FC = () => {
           </motion.div>
         ))}
       </div>
-      <div className={styles.stylesTechnologies}>
-        {stylesTechnologies.map((el, i) => (
-          <motion.div
-            className={styles.item}
-            variants={listVariants}
-            whileInView="visible"
-            viewport={{ once: true }}
-            initial="hidden"
-            custom={i}
-          >
-            <img src={el.img} alt={el.name} />
-            <h2>{el.name}</h2>
-          </motion.div>
-        ))}
-      </div>
       <motion.div className={styles.supportTechnologies}>
         {supportTechnologies.map((el, i) => (
           <motion.div
@@ -72,6 +57,36 @@ const Technologies: FC = () => {
           </motion.div>
         ))}
       </motion.div>
+      <div className={styles.stylesTechnologies}>
+        {stylesTechnologies.map((el, i) => (
+          <motion.div
+            className={styles.item}
+            variants={listVariants}
+            whileInView="visible"
+            viewport={{ once: true }}
+            initial="hidden"
+            custom={i}
+          >
+            <img src={el.img} alt={el.name} />
+            <h2>{el.name}</h2>
+          </motion.div>
+        ))}
+      </div>
+      <div className={styles.stylesTechnologies}>
+        {otherTechnologies.map((el, i) => (
+          <motion.div
+            className={styles.item}
+            variants={listVariants}
+            whileInView="visible"
+            viewport={{ once: true }}
+            initial="hidden"
+            custom={i}
+          >
+            <img src={el.img} alt={el.name} />
+            <h2>{el.name}</h2>
+          </motion.div>
+        ))}
+      </div>
     </div>
   );
 };

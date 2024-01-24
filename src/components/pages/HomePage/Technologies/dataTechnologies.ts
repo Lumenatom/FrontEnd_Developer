@@ -12,15 +12,30 @@ import JestImg from "../../../../assets/Technologies/jest.webp";
 import ViteImg from "../../../../assets/Technologies/vite.webp";
 import NativeImg from "../../../../assets/Technologies/native.webp";
 import GitImg from "../../../../assets/Technologies/git.webp";
+import NextImg from "../../../../assets/Technologies/next.webp";
+import LaravelImg from "../../../../assets/Technologies/laravel.webp";
+import ReactQueryImg from "../../../../assets/Technologies/query.webp";
+import DockerImg from "../../../../assets/Technologies/docker.webp";
 
-export const favoriteTechnologies = [
-  { name: "React", img: ReactImg },
-  { name: "TypeScript", img: TsImg },
-  { name: "JavaScript", img: JsImg },
-  { name: "Redux Toolkit", img: ReduxImg },
-  { name: "React Native / Expo CLI ", img: NativeImg },
+
+export const allTechnologies = [
+
 ];
+export const favoriteTechnologies = [
+  { name: "JavaScript", img: JsImg },
+  { name: "TypeScript", img: TsImg },
+  { name: "React", img: ReactImg },
+  { name: "Next.js", img: NextImg },
+  { name: "React Native", img: NativeImg },
 
+];
+export const supportTechnologies = [
+  { name: "Laravel", img: LaravelImg },
+  { name: "Rest API", img: RestImg },
+  { name: "Redux Toolkit", img: ReduxImg },
+  { name: "React Query", img: ReactQueryImg },
+  { name: "Docker", img: DockerImg },
+];
 export const stylesTechnologies = [
   { name: "Sass", img: SassImg },
   { name: "Styled Component", img: StyledImg },
@@ -28,9 +43,10 @@ export const stylesTechnologies = [
   { name: "HTML / CSS", img: HtmlImg },
   { name: "Framer Motion", img: MotionImg },
 ];
-export const supportTechnologies = [
+
+export const otherTechnologies = [
   { name: "Jest", img: JestImg },
-  { name: "Rest API", img: RestImg },
   { name: "Git", img: GitImg },
   { name: "Vite", img: ViteImg },
 ];
+
